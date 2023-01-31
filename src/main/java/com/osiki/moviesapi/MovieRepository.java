@@ -11,5 +11,5 @@ public interface MovieRepository extends MongoRepository<Movie, ObjectId> {
 
     // to find movie by id using imdbId instead of objectId so as not expose our user id to the public
 
-    Optional<Movie> findMovieByImbdbId(String imdbId);
+    Optional<Movie> findMovieByImdbId(String imdbId);
 }
